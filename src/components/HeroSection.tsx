@@ -12,7 +12,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreMass, onPlanV
       {/* Background with Real Sanctuary Photograph and Highly Transparent Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/church/altar_pristine.jpg"
+          src="/images/church/hero_altar_user.jpg"
           alt="Sancta Maria Catholic Church Sanctuary Altar"
           className="w-full h-full object-cover object-center filter brightness-[0.98] contrast-[1.02]"
         />
