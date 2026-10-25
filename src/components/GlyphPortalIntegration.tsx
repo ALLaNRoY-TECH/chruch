@@ -23,23 +23,7 @@ export const ChurchGlyphPortal: React.FC = () => {
           </div>
         }
         front={
-          <div className="absolute inset-0 pointer-events-none flex flex-col justify-between p-6 sm:p-8 md:p-12">
-            {/* Top Bar */}
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#B69556] animate-pulse"></span>
-                <span className="text-xs uppercase tracking-[0.2em] font-semibold text-[#642D3A]">
-                  Sacred Portal Experience
-                </span>
-              </div>
-              <span className="text-xs uppercase tracking-widest text-[#594438]/80 font-mono">
-                Interactive Type Camera
-              </span>
-            </div>
-
-            {/* Empty Center so SANCTA letters are completely unobstructed */}
-            <div className="flex-1 pointer-events-none" />
-
+          <div className="absolute inset-0 pointer-events-none flex flex-col justify-end p-6 sm:p-8 md:p-12">
             {/* Bottom: Caption placed clearly BELOW the SANCTA word */}
             <div className="w-full max-w-3xl mx-auto flex flex-col items-center text-center space-y-3 pb-2 sm:pb-4">
               <div className="px-6 py-3.5 rounded-2xl bg-[#FAF8F3]/95 backdrop-blur-md border border-[#B69556]/50 shadow-xl max-w-xl mx-auto pointer-events-auto">

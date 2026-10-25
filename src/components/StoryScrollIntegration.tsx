@@ -1,6 +1,5 @@
 import React from 'react';
 import FlowArt, { FlowSection } from '@/components/ui/story-scroll';
-import { Church, Sparkles, Heart, Compass, Shield } from 'lucide-react';
 
 export const ChurchStoryScroll: React.FC = () => {
   return (
@@ -11,16 +10,6 @@ export const ChurchStoryScroll: React.FC = () => {
           aria-label="Sacred Roots" 
           style={{ backgroundColor: '#642D3A', color: '#FAF8F3' }}
         >
-          <div className="flex items-center justify-between border-b border-[#FAF8F3]/20 pb-4">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B69556] flex items-center gap-2">
-              <Shield className="w-3.5 h-3.5 text-[#B69556]" />
-              01 — Apostolic Heritage
-            </span>
-            <span className="text-xs uppercase tracking-widest text-[#FAF8F3]/60 font-mono">
-              AD 52 · Thomas Christians
-            </span>
-          </div>
-
           <div className="my-auto py-8">
             <p className="text-xs uppercase tracking-[0.3em] text-[#FAF8F3]/80 font-medium mb-3">
               Sancta Maria Catholic Church · Kelambakkam
@@ -49,16 +38,6 @@ export const ChurchStoryScroll: React.FC = () => {
           aria-label="The Holy Qurbana" 
           style={{ backgroundColor: '#263B50', color: '#FAF8F3' }}
         >
-          <div className="flex items-center justify-between border-b border-[#FAF8F3]/20 pb-4">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#A9C2D0] flex items-center gap-2">
-              <Sparkles className="w-3.5 h-3.5 text-[#A9C2D0]" />
-              02 — Divine Liturgy
-            </span>
-            <span className="text-xs uppercase tracking-widest text-[#FAF8F3]/60 font-mono">
-              Anaphora of Mar Addai & Mari
-            </span>
-          </div>
-
           <div className="my-auto py-8">
             <h2 className="font-serif text-[clamp(2.8rem,9vw,8.5rem)] font-bold leading-[0.92] uppercase tracking-tight text-[#FAF8F3]">
               The Holy
@@ -90,16 +69,6 @@ export const ChurchStoryScroll: React.FC = () => {
           aria-label="The Consecrated Sanctuary" 
           style={{ backgroundColor: '#E8DDCC', color: '#35251F' }}
         >
-          <div className="flex items-center justify-between border-b border-[#35251F]/20 pb-4">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#642D3A] flex items-center gap-2">
-              <Church className="w-3.5 h-3.5 text-[#642D3A]" />
-              03 — Consecrated Sanctuary
-            </span>
-            <span className="text-xs uppercase tracking-widest text-[#594438]/70 font-mono">
-              Ivory & Gold Altar
-            </span>
-          </div>
-
           <div className="my-auto py-8">
             <h2 className="font-serif text-[clamp(2.8rem,9vw,8.5rem)] font-bold leading-[0.92] uppercase tracking-tight text-[#35251F]">
               Sacred
@@ -131,16 +100,6 @@ export const ChurchStoryScroll: React.FC = () => {
           aria-label="One Family in Christ" 
           style={{ backgroundColor: '#35251F', color: '#FAF8F3' }}
         >
-          <div className="flex items-center justify-between border-b border-[#FAF8F3]/20 pb-4">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B69556] flex items-center gap-2">
-              <Heart className="w-3.5 h-3.5 text-[#B69556]" />
-              04 — Parish Community
-            </span>
-            <span className="text-xs uppercase tracking-widest text-[#FAF8F3]/60 font-mono">
-              Kelambakkam · Chennai OMR
-            </span>
-          </div>
-
           <div className="my-auto py-8">
             <h2 className="font-serif text-[clamp(2.8rem,9vw,8.5rem)] font-bold leading-[0.92] uppercase tracking-tight text-[#FAF8F3]">
               One Heart.
@@ -163,16 +122,6 @@ export const ChurchStoryScroll: React.FC = () => {
           aria-label="Come and See" 
           style={{ backgroundColor: '#FAF8F3', color: '#35251F' }}
         >
-          <div className="flex items-center justify-between border-b border-[#35251F]/20 pb-4">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#642D3A] flex items-center gap-2">
-              <Compass className="w-3.5 h-3.5 text-[#642D3A]" />
-              05 — Your Welcome
-            </span>
-            <span className="text-xs uppercase tracking-widest text-[#594438]/70 font-mono">
-              Thaiyur Market Road
-            </span>
-          </div>
-
           <div className="my-auto py-8">
             <h2 className="font-serif text-[clamp(2.8rem,9vw,8.5rem)] font-bold leading-[0.92] uppercase tracking-tight text-[#35251F]">
               Come
