@@ -15,7 +15,7 @@ export const ChurchGlyphPortal: React.FC = () => {
         background={
           <div className="absolute inset-0 overflow-hidden">
             <img
-              src="/images/church/sanctuary_wide.jpg"
+              src="/images/church/hero_altar_user.jpg"
               alt="Sancta Maria Church Sanctuary"
               className="w-full h-full object-cover object-center filter brightness-95"
             />
@@ -27,19 +27,6 @@ export const ChurchGlyphPortal: React.FC = () => {
             {/* Top spacer */}
             <div />
 
-            {/* Aesthetic "Church" sub-label placed directly beneath SANCTA MARIA */}
-            <div className="w-full flex flex-col items-center justify-center text-center mt-14 sm:mt-18 md:mt-24 pointer-events-none">
-              <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-[#FAF8F3]/90 backdrop-blur-sm border border-[#B69556]/50 shadow-xs">
-                <span className="w-6 sm:w-10 h-[1px] bg-[#B69556]"></span>
-                <span className="font-serif text-xs sm:text-sm md:text-base uppercase tracking-[0.35em] text-[#642D3A] font-bold">
-                  Church
-                </span>
-                <span className="w-6 sm:w-10 h-[1px] bg-[#B69556]"></span>
-              </div>
-              <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#594438]/85 font-medium mt-1.5">
-                Syro Malabar Catholic Parish · Kelambakkam
-              </p>
-            </div>
 
             {/* Bottom: Caption placed clearly BELOW the SANCTA word */}
             <div className="w-full max-w-3xl mx-auto flex flex-col items-center text-center space-y-3 pb-2 sm:pb-4">
