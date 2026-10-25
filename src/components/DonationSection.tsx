@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { Heart, QrCode, Copy, Check, ShieldCheck, Download, Sparkles, Building2, Phone, Upload, Image } from 'lucide-react';
+import { Heart, QrCode, Copy, Check, ShieldCheck, Download, Sparkles, Building2, Phone } from 'lucide-react';
 
 export const DonationSection: React.FC = () => {
   const [copiedUpi, setCopiedUpi] = useState(false);
   const [copiedBank, setCopiedBank] = useState(false);
-  const [customQr, setCustomQr] = useState<string | null>(null);
 
   // Default parish UPI ID (editable placeholder)
   const upiId = 'sanctamaria.church@okaxis';
@@ -14,17 +13,6 @@ export const DonationSection: React.FC = () => {
     ifsc: 'UTIB000XXXX',
     bank: 'Axis Bank / HDFC Bank',
     branch: 'Kelambakkam Branch, Tamil Nadu'
-  };
-
-  const handleQrUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        setCustomQr(event.target?.result as string);
-      };
-      reader.readAsDataURL(file);
-    }
   };
 
   const copyToClipboard = (text: string, type: 'upi' | 'bank') => {
@@ -69,29 +57,28 @@ export const DonationSection: React.FC = () => {
               </div>
 
               {/* QR Code Frame */}
-              <div className="max-w-xs mx-auto text-center p-6 bg-[#FAF8F3] rounded-2xl border-2 border-dashed border-[#B69556]/50 shadow-inner my-4 relative">
-                {/* Genuine QR Display */}
-                <div className="aspect-square w-56 h-56 mx-auto bg-[#FFFFFF] p-3 rounded-xl shadow-md border border-[#B69556]/20 flex flex-col items-center justify-center relative overflow-hidden">
+              <div className="max-w-xs mx-auto text-center p-6 bg-[#FAF8F3] rounded-3xl border border-[#B69556]/40 shadow-inner my-4 relative">
+                {/* Genuine Church GPay QR Display */}
+                <div className="w-60 max-w-full mx-auto bg-[#FFFFFF] p-2 sm:p-3 rounded-2xl shadow-lg border border-[#B69556]/30 flex flex-col items-center justify-center relative overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
                   <img
-                    src={customQr || "/images/church/gpay_qr.svg"}
-                    alt="Sancta Maria Church GPay QR Code"
-                    className="w-full h-full object-contain"
+                    src="/images/church/gpay_qr_hd.png"
+                    alt="Sancta Maria Church Google Pay & UPI QR Code"
+                    className="w-full h-auto object-contain rounded-xl"
                   />
                 </div>
 
-                {/* Upload or Swap QR Button for Parish Admin */}
-                <div className="mt-3 flex flex-col items-center gap-1.5">
-                  <label className="cursor-pointer inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-[#B69556]/60 bg-[#FFFFFF] hover:bg-[#642D3A] hover:text-[#FAF8F3] text-xs font-semibold text-[#594438] transition-all shadow-sm">
-                    <Upload className="w-3.5 h-3.5" />
-                    <span>{customQr ? "Change Uploaded QR" : "Upload / Replace QR"}</span>
-                    <input type="file" accept="image/*" onChange={handleQrUpload} className="hidden" />
-                  </label>
-                  <span className="text-[10px] text-[#594438]/60">
-                    Accepts PNG / JPG / SVG file of your Google Pay QR
-                  </span>
+                <div className="mt-4 flex items-center justify-center gap-2">
+                  <a
+                    href="/images/church/gpay_qr_hd.png"
+                    download="Sancta_Maria_Church_GPay_QR.png"
+                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-[#B69556]/60 bg-[#FFFFFF] hover:bg-[#642D3A] hover:text-[#FAF8F3] text-xs font-semibold text-[#594438] transition-all shadow-sm"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>Download QR Code</span>
+                  </a>
                 </div>
 
-                <div className="mt-4 flex items-center justify-center gap-3 text-xs font-semibold text-[#594438] pt-2 border-t border-[#B69556]/20">
+                <div className="mt-4 flex items-center justify-center gap-3 text-xs font-semibold text-[#594438] pt-3 border-t border-[#B69556]/20">
                   <span className="flex items-center gap-1">
                     <span className="w-2 h-2 rounded-full bg-[#34A853]"></span> GPay
                   </span>
