@@ -6,7 +6,6 @@ import { ChurchGlyphPortal } from '@/components/GlyphPortalIntegration';
 import { AboutSection } from '@/components/AboutSection';
 import { ChurchStoryScroll } from '@/components/StoryScrollIntegration';
 import { SacramentsSection } from '@/components/SacramentsSection';
-import { MinistriesSection } from '@/components/MinistriesSection';
 import { GalleryLightbox } from '@/components/GalleryLightbox';
 import { EventsSection } from '@/components/EventsSection';
 import { PrayerRequestsSection } from '@/components/PrayerRequestsSection';
@@ -51,10 +50,7 @@ export function App() {
       {/* 7. Sacraments */}
       <SacramentsSection />
 
-      {/* 8. Parish Ministries & Life */}
-      <MinistriesSection />
-
-      {/* 9. Authentic Sanctuary Photo Gallery with Lightbox */}
+      {/* 8. Authentic Sanctuary Photo Gallery with Lightbox */}
       <GalleryLightbox />
 
       {/* 10. Liturgical Events & Announcements */}

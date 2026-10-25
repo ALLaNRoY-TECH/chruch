@@ -49,7 +49,7 @@ export const FooterSection: React.FC = () => {
               <li><a href="#about" className="hover:text-[#B69556] transition-colors">About Our Parish & Heritage</a></li>
               <li><a href="#mass-timings" className="hover:text-[#B69556] transition-colors">Mass & Confession Timings</a></li>
               <li><a href="#sacraments" className="hover:text-[#B69556] transition-colors">The Seven Sacraments</a></li>
-              <li><a href="#ministries" className="hover:text-[#B69556] transition-colors">Parish Ministries & Youth</a></li>
+              <li><a href="#donate" className="hover:text-[#B69556] transition-colors">Parish Offerings & GPay</a></li>
               <li><a href="#events" className="hover:text-[#B69556] transition-colors">Events & Feasts</a></li>
               <li><a href="#gallery" className="hover:text-[#B69556] transition-colors">Sanctuary Photo Gallery</a></li>
               <li><a href="#prayer-requests" className="hover:text-[#B69556] transition-colors">Prayer Petitions</a></li>

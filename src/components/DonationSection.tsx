@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, QrCode, Copy, Check, ShieldCheck, Download, Sparkles, Building2, Phone } from 'lucide-react';
+import { Church, BookOpen, HeartHandshake, Flame, Building2, Copy, Check, ShieldCheck, Download } from 'lucide-react';
 
 export const DonationSection: React.FC = () => {
   const [copiedUpi, setCopiedUpi] = useState(false);
@@ -125,29 +125,89 @@ export const DonationSection: React.FC = () => {
 
           {/* Right Column: Bank Details & Offering Causes */}
           <div className="lg:col-span-6 flex flex-col justify-between space-y-6">
-            {/* Causes / Purpose */}
-            <div className="bg-[#FFFFFF] rounded-3xl p-8 shadow-xl border border-[#B69556]/30">
-              <h3 className="font-serif text-2xl font-bold text-[#35251F] mb-4 flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-[#B69556]" />
-                How Your Offerings Help
-              </h3>
+            {/* Sacred Stewardship & Fruits of Generosity */}
+            <div className="bg-[#FFFFFF] rounded-3xl p-8 md:p-9 shadow-xl border-2 border-[#B69556]/30 relative overflow-hidden">
+              <div className="flex items-center justify-between pb-3 mb-6 border-b border-[#B69556]/20">
+                <div>
+                  <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#642D3A] block mb-0.5">
+                    Sacred Stewardship
+                  </span>
+                  <h3 className="font-serif text-2xl font-bold text-[#35251F]">
+                    Fruits of Your Generosity
+                  </h3>
+                </div>
+                <div className="w-10 h-10 rounded-full bg-[#FAF8F3] border border-[#B69556]/40 flex items-center justify-center text-[#642D3A] shrink-0 shadow-xs">
+                  <Church className="w-5 h-5 text-[#642D3A]" />
+                </div>
+              </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-[#594438]">
-                <div className="p-3.5 rounded-xl bg-[#FAF8F3] border border-[#B69556]/20">
-                  <p className="font-bold text-[#35251F] mb-1">⛪ Sanctuary Upkeep</p>
-                  <p className="leading-relaxed">Maintaining the altar, flowers, electricity, and sacred vestments.</p>
+              <div className="space-y-4">
+                {/* Item 1 */}
+                <div className="p-4 rounded-2xl bg-[#FAF8F3]/80 border border-[#B69556]/25 transition-all duration-300 hover:border-[#642D3A]/40 hover:bg-[#FAF8F3] group">
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-8 h-8 rounded-full bg-[#642D3A]/10 text-[#642D3A] flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#642D3A] group-hover:text-[#FAF8F3] transition-colors">
+                      <Church className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h4 className="font-serif text-base font-bold text-[#35251F] group-hover:text-[#642D3A] transition-colors">
+                        Sanctuary Upkeep & Liturgy
+                      </h4>
+                      <p className="text-xs text-[#594438]/85 font-normal leading-relaxed mt-0.5">
+                        Maintaining the altar of sacrifice, floral offerings, Eucharistic vestments, and liturgical celebration of the Holy Qurbana.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-3.5 rounded-xl bg-[#FAF8F3] border border-[#B69556]/20">
-                  <p className="font-bold text-[#35251F] mb-1">📖 Faith Formation</p>
-                  <p className="leading-relaxed">Books and resources for Sunday Catechism students and SMYM youth.</p>
+
+                {/* Item 2 */}
+                <div className="p-4 rounded-2xl bg-[#FAF8F3]/80 border border-[#B69556]/25 transition-all duration-300 hover:border-[#642D3A]/40 hover:bg-[#FAF8F3] group">
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-8 h-8 rounded-full bg-[#B69556]/15 text-[#B69556] flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#B69556] group-hover:text-[#FAF8F3] transition-colors">
+                      <BookOpen className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h4 className="font-serif text-base font-bold text-[#35251F] group-hover:text-[#642D3A] transition-colors">
+                        Catechesis & Faith Formation
+                      </h4>
+                      <p className="text-xs text-[#594438]/85 font-normal leading-relaxed mt-0.5">
+                        Supplying liturgical texts, Sunday Catechism resources, and youth retreats for the children and young adults of our parish.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-3.5 rounded-xl bg-[#FAF8F3] border border-[#B69556]/20">
-                  <p className="font-bold text-[#35251F] mb-1">🤝 Charitable Outreach</p>
-                  <p className="leading-relaxed">Aid to disadvantaged families and medical support in Kelambakkam.</p>
+
+                {/* Item 3 */}
+                <div className="p-4 rounded-2xl bg-[#FAF8F3]/80 border border-[#B69556]/25 transition-all duration-300 hover:border-[#642D3A]/40 hover:bg-[#FAF8F3] group">
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-8 h-8 rounded-full bg-[#263B50]/10 text-[#263B50] flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#263B50] group-hover:text-[#FAF8F3] transition-colors">
+                      <HeartHandshake className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h4 className="font-serif text-base font-bold text-[#35251F] group-hover:text-[#642D3A] transition-colors">
+                        Charitable Outreach & Mercy
+                      </h4>
+                      <p className="text-xs text-[#594438]/85 font-normal leading-relaxed mt-0.5">
+                        Extending quiet medical assistance, food parcels, and educational sponsorship to vulnerable families in and around Kelambakkam.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-3.5 rounded-xl bg-[#FAF8F3] border border-[#B69556]/20">
-                  <p className="font-bold text-[#35251F] mb-1">🕯️ Masses & Intentions</p>
-                  <p className="leading-relaxed">Stipends for Holy Qurbana offered for your thanksgiving or departed loved ones.</p>
+
+                {/* Item 4 */}
+                <div className="p-4 rounded-2xl bg-[#FAF8F3]/80 border border-[#B69556]/25 transition-all duration-300 hover:border-[#642D3A]/40 hover:bg-[#FAF8F3] group">
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-8 h-8 rounded-full bg-[#642D3A]/10 text-[#642D3A] flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#642D3A] group-hover:text-[#FAF8F3] transition-colors">
+                      <Flame className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <h4 className="font-serif text-base font-bold text-[#35251F] group-hover:text-[#642D3A] transition-colors">
+                        Holy Qurbana Intentions
+                      </h4>
+                      <p className="text-xs text-[#594438]/85 font-normal leading-relaxed mt-0.5">
+                        Offering special Eucharistic sacrifices in heartfelt thanksgiving, for family blessings, healing, or the repose of departed loved ones.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
