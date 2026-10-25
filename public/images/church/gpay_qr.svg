@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <rect width="300" height="300" fill="#FFFFFF" rx="16"/>
+  
+  <!-- Outer Finder 1 (Top Left) -->
+  <rect x="25" y="25" width="60" height="60" rx="8" fill="#263B50"/>
+  <rect x="33" y="33" width="44" height="44" rx="4" fill="#FFFFFF"/>
+  <rect x="41" y="41" width="28" height="28" rx="4" fill="#642D3A"/>
+
+  <!-- Outer Finder 2 (Top Right) -->
+  <rect x="215" y="25" width="60" height="60" rx="8" fill="#263B50"/>
+  <rect x="223" y="33" width="44" height="44" rx="4" fill="#FFFFFF"/>
+  <rect x="231" y="41" width="28" height="28" rx="4" fill="#642D3A"/>
+
+  <!-- Outer Finder 3 (Bottom Left) -->
+  <rect x="25" y="215" width="60" height="60" rx="8" fill="#263B50"/>
+  <rect x="33" y="223" width="44" height="44" rx="4" fill="#FFFFFF"/>
+  <rect x="41" y="231" width="28" height="28" rx="4" fill="#642D3A"/>
+
+  <!-- Data modules pattern (decorative & structured) -->
+  <g fill="#35251F">
+    <!-- Alignment patterns -->
+    <rect x="95" y="35" width="10" height="10" rx="2"/>
+    <rect x="115" y="35" width="10" height="10" rx="2"/>
+    <rect x="135" y="35" width="10" height="10" rx="2"/>
+    <rect x="155" y="35" width="10" height="10" rx="2"/>
+    <rect x="175" y="35" width="10" height="10" rx="2"/>
+    <rect x="195" y="35" width="10" height="10" rx="2"/>
+
+    <rect x="95" y="55" width="10" height="10" rx="2"/>
+    <rect x="125" y="55" width="20" height="10" rx="2"/>
+    <rect x="165" y="55" width="10" height="10" rx="2"/>
+    <rect x="185" y="55" width="20" height="10" rx="2"/>
+
+    <rect x="95" y="75" width="20" height="10" rx="2"/>
+    <rect x="135" y="75" width="10" height="10" rx="2"/>
+    <rect x="155" y="75" width="20" height="10" rx="2"/>
+    <rect x="185" y="75" width="10" height="10" rx="2"/>
+
+    <!-- Horizontal timing bar -->
+    <rect x="35" y="95" width="10" height="10" rx="2"/>
+    <rect x="55" y="95" width="10" height="10" rx="2"/>
+    <rect x="75" y="95" width="10" height="10" rx="2"/>
+    <rect x="95" y="95" width="10" height="10" rx="2"/>
+    <rect x="115" y="95" width="10" height="10" rx="2"/>
+    <rect x="135" y="95" width="10" height="10" rx="2"/>
+    <rect x="155" y="95" width="10" height="10" rx="2"/>
+    <rect x="175" y="95" width="10" height="10" rx="2"/>
+    <rect x="195" y="95" width="10" height="10" rx="2"/>
+    <rect x="215" y="95" width="10" height="10" rx="2"/>
+    <rect x="235" y="95" width="10" height="10" rx="2"/>
+    <rect x="255" y="95" width="10" height="10" rx="2"/>
+
+    <!-- Middle field patterns -->
+    <rect x="25" y="115" width="20" height="10" rx="2"/>
+    <rect x="55" y="115" width="10" height="10" rx="2"/>
+    <rect x="75" y="115" width="20" height="10" rx="2"/>
+    <rect x="215" y="115" width="10" height="10" rx="2"/>
+    <rect x="235" y="115" width="30" height="10" rx="2"/>
+
+    <rect x="35" y="135" width="10" height="10" rx="2"/>
+    <rect x="65" y="135" width="20" height="10" rx="2"/>
+    <rect x="215" y="135" width="20" height="10" rx="2"/>
+    <rect x="245" y="135" width="10" height="10" rx="2"/>
+
+    <rect x="25" y="155" width="10" height="10" rx="2"/>
+    <rect x="45" y="155" width="20" height="10" rx="2"/>
+    <rect x="75" y="155" width="10" height="10" rx="2"/>
+    <rect x="225" y="155" width="20" height="10" rx="2"/>
+    <rect x="255" y="155" width="10" height="10" rx="2"/>
+
+    <rect x="25" y="175" width="20" height="10" rx="2"/>
+    <rect x="55" y="175" width="10" height="10" rx="2"/>
+    <rect x="75" y="175" width="20" height="10" rx="2"/>
+    <rect x="215" y="175" width="10" height="10" rx="2"/>
+    <rect x="235" y="175" width="20" height="10" rx="2"/>
+
+    <!-- Lower section patterns -->
+    <rect x="95" y="195" width="10" height="10" rx="2"/>
+    <rect x="115" y="195" width="20" height="10" rx="2"/>
+    <rect x="145" y="195" width="10" height="10" rx="2"/>
+    <rect x="165" y="195" width="20" height="10" rx="2"/>
+    <rect x="195" y="195" width="10" height="10" rx="2"/>
+    <rect x="215" y="195" width="20" height="10" rx="2"/>
+    <rect x="245" y="195" width="20" height="10" rx="2"/>
+
+    <rect x="95" y="215" width="20" height="10" rx="2"/>
+    <rect x="125" y="215" width="10" height="10" rx="2"/>
+    <rect x="145" y="215" width="20" height="10" rx="2"/>
+    <rect x="175" y="215" width="10" height="10" rx="2"/>
+    <rect x="195" y="215" width="20" height="10" rx="2"/>
+    <rect x="225" y="215" width="10" height="10" rx="2"/>
+    <rect x="245" y="215" width="20" height="10" rx="2"/>
+
+    <rect x="95" y="235" width="10" height="10" rx="2"/>
+    <rect x="115" y="235" width="20" height="10" rx="2"/>
+    <rect x="145" y="235" width="10" height="10" rx="2"/>
+    <rect x="165" y="235" width="20" height="10" rx="2"/>
+    <rect x="195" y="235" width="10" height="10" rx="2"/>
+    <rect x="215" y="235" width="20" height="10" rx="2"/>
+    <rect x="245" y="235" width="10" height="10" rx="2"/>
+
+    <rect x="95" y="255" width="20" height="10" rx="2"/>
+    <rect x="125" y="255" width="10" height="10" rx="2"/>
+    <rect x="145" y="255" width="20" height="10" rx="2"/>
+    <rect x="175" y="255" width="10" height="10" rx="2"/>
+    <rect x="195" y="255" width="10" height="10" rx="2"/>
+    <rect x="215" y="255" width="20" height="10" rx="2"/>
+    <rect x="245" y="255" width="20" height="10" rx="2"/>
+  </g>
+
+  <!-- Center Google Pay / Sancta Maria Badge -->
+  <rect x="105" y="105" width="90" height="90" rx="14" fill="#FFFFFF" stroke="#B69556" stroke-width="2"/>
+  <circle cx="150" cy="150" r="32" fill="#642D3A"/>
+  <text x="150" y="160" font-family="serif" font-size="28" font-weight="bold" fill="#FAF8F3" text-anchor="middle">✟</text>
+  <text x="150" y="184" font-family="sans-serif" font-size="8" font-weight="bold" fill="#B69556" text-anchor="middle" letter-spacing="1">SANCTA MARIA</text>
+</svg>
