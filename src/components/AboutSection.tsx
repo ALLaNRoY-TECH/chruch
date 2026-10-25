@@ -84,7 +84,7 @@ export const AboutSection: React.FC = () => {
             <div className="md:col-span-4 flex flex-col items-center text-center">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#FFFFFF] border-2 border-[#B69556] p-2 flex items-center justify-center shadow-md relative overflow-hidden">
                 <img
-                  src="/images/church/church_logo.png"
+                  src="/images/church/church_emblem.png"
                   alt="Sancta Maria Catholic Church Logo"
                   className="w-full h-full object-contain"
                 />

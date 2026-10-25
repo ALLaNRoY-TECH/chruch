@@ -207,20 +207,20 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
                 href="#home" 
                 onClick={(e) => handleLinkClick(e, "home")} 
                 aria-label="Sancta Maria Catholic Church Home" 
-                className="nav-logo-row w-inline-block flex items-center gap-3 group text-decoration-none"
+                className="nav-logo-row w-inline-block flex items-center gap-3 sm:gap-4 group text-decoration-none py-1"
               >
-                <div className="w-10 h-10 rounded-full overflow-hidden border border-[#B69556]/40 shadow-sm bg-white p-0.5 transition-transform duration-300 group-hover:scale-105 shrink-0 flex items-center justify-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-[72px] md:h-[72px] rounded-full overflow-hidden border-2 border-[#B69556]/60 shadow-md bg-white p-1 transition-transform duration-300 group-hover:scale-105 shrink-0 flex items-center justify-center">
                   <img
-                    src="/images/church/church_logo.png"
+                    src="/images/church/church_emblem.png"
                     alt="Sancta Maria Catholic Church Logo"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="flex flex-col text-left">
-                  <span className="font-serif text-base tracking-wider font-semibold text-[#35251F] uppercase leading-none group-hover:text-[#642D3A] transition-colors">
+                  <span className="font-serif text-lg sm:text-xl md:text-2xl tracking-wider font-bold text-[#35251F] uppercase leading-tight group-hover:text-[#642D3A] transition-colors">
                     {churchName}
                   </span>
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-[#594438]/80 font-sans mt-0.5">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-[#594438]/85 font-sans mt-0.5 font-medium">
                     Syro Malabar Catholic Church · Kelambakkam
                   </span>
                 </div>
@@ -422,9 +422,9 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
                 className="w-full flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-[#642D3A] to-[#451B25] text-[#FAF8F3] shadow-md border border-[#B69556]/40 hover:shadow-xl hover:scale-[1.01] transition-all group cursor-pointer"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full overflow-hidden bg-white p-0.5 border border-[#B69556]/40 shadow-sm shrink-0 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-0.5 border border-[#B69556]/60 shadow-sm shrink-0 flex items-center justify-center">
                     <img
-                      src="/images/church/church_logo.png"
+                      src="/images/church/church_emblem.png"
                       alt="Sancta Maria Logo"
                       className="w-full h-full object-contain"
                     />

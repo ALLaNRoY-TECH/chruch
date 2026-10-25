@@ -13,9 +13,9 @@ export const FooterSection: React.FC = () => {
           {/* Brand Col */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-0.5 border border-[#B69556] shadow-sm shrink-0 flex items-center justify-center">
+              <div className="w-14 h-14 rounded-full overflow-hidden bg-white p-1 border border-[#B69556] shadow-sm shrink-0 flex items-center justify-center">
                 <img
-                  src="/images/church/church_logo.png"
+                  src="/images/church/church_emblem.png"
                   alt="Sancta Maria Church Logo"
                   className="w-full h-full object-contain"
                 />
