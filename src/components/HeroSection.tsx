@@ -1,5 +1,4 @@
 import React from 'react';
-import { MapPin, Phone, Clock } from 'lucide-react';
 
 interface HeroSectionProps {
   onExploreMass: () => void;
@@ -8,65 +7,47 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreMass, onPlanVisit }) => {
   return (
-    <section id="home" className="relative min-h-[92vh] flex items-center pt-28 md:pt-32 pb-16 px-6 md:px-12 overflow-hidden bg-[#FAF8F3]">
-      {/* Background with Real Sanctuary Photograph and Highly Transparent Overlay */}
+    <section id="home" className="relative min-h-screen flex items-end overflow-hidden bg-[#FAF8F3]">
+      {/* Full-bleed Authentic Altar Photograph */}
       <div className="absolute inset-0 z-0">
         <img
           src="/images/church/hero_altar_user.jpg"
           alt="Sancta Maria Catholic Church Sanctuary Altar"
           className="w-full h-full object-cover object-center filter brightness-[0.98] contrast-[1.02]"
         />
-        {/* Soft, Transparent Multi-Tone Overlay - transparent to reveal the sanctuary clearly */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#FAF8F3]/80 via-[#FAF8F3]/35 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8F3] via-[#FAF8F3]/15 to-transparent"></div>
+
+        {/* Subtle top vignette for crystal clear navigation visibility */}
+        <div className="absolute top-0 inset-x-0 h-36 bg-gradient-to-b from-[#FAF8F3]/90 via-[#FAF8F3]/40 to-transparent pointer-events-none"></div>
+
+        {/* Cinematic dark bottom gradient inspired by the reference site for perfect text legibility */}
+        <div className="absolute bottom-0 inset-x-0 h-96 bg-gradient-to-t from-black/85 via-black/45 to-transparent pointer-events-none"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full">
-        {/* Left Column: Editorial Headline & Actions */}
+      {/* Content anchored at the bottom-left corner like the inspiration image */}
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 sm:px-12 md:px-16 pb-12 sm:pb-16">
         <div className="max-w-2xl flex flex-col items-start text-left">
-
-          {/* Main Headline */}
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#35251F] leading-[1.08] mb-6 drop-shadow-xs">
-            A Place of Faith.
-            <br />
-            <span className="italic font-normal text-[#642D3A]">A Home for Every Heart.</span>
-          </h1>
-
-          {/* Welcoming Subtitle */}
-          <p className="text-base sm:text-lg md:text-xl text-[#35251F] max-w-xl font-medium leading-relaxed mb-8 drop-shadow-xs">
-            Welcome to Sancta Maria, a parish home of prayer, sacred liturgy, and deep spiritual communion in Kelambakkam, Tamil Nadu. Rooted in faith, united in Christ.
+          {/* 2-line poetic editorial statement */}
+          <p className="text-white text-base sm:text-lg md:text-xl font-normal leading-relaxed mb-6 drop-shadow-md">
+            A place of prayer, sacred liturgy, and deep spiritual communion in Kelambakkam.
+            <br className="hidden sm:inline" />
+            Rooted in faith, a sanctuary and home for every heart.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-wrap items-center gap-4 mb-10 w-full sm:w-auto">
+          {/* Minimalist button row inspired by the reference: solid white button + transparent outline ghost button */}
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
             <button
               onClick={onExploreMass}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#642D3A] text-[#FAF8F3] text-sm uppercase tracking-wider font-semibold shadow-lg shadow-[#642D3A]/25 hover:bg-[#263B50] hover:shadow-xl transition-all duration-300"
+              className="flex-1 sm:flex-none px-7 py-3.5 bg-white text-[#1C1917] text-xs uppercase tracking-[0.2em] font-bold shadow-lg hover:bg-[#FAF8F3] hover:text-[#642D3A] transition-all duration-200 cursor-pointer"
             >
-              <Clock className="w-4 h-4 text-[#B69556]" />
-              <span>Explore Mass Timings</span>
+              Explore Mass Timings
             </button>
 
             <button
               onClick={onPlanVisit}
-              className="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#FAF8F3]/95 text-[#35251F] border border-[#B69556] text-sm uppercase tracking-wider font-semibold shadow-md hover:bg-[#E8DDCC] transition-all duration-300"
+              className="flex-1 sm:flex-none px-7 py-3.5 bg-transparent border border-white/80 text-white text-xs uppercase tracking-[0.2em] font-semibold hover:bg-white/10 hover:border-white transition-all duration-200 cursor-pointer"
             >
-              <MapPin className="w-4 h-4 text-[#642D3A]" />
-              <span>Visit Our Church</span>
+              Visit Our Church
             </button>
-          </div>
-
-          {/* Fast-Facts Badge Bar */}
-          <div className="pt-6 border-t border-[#B69556]/30 flex flex-wrap items-center gap-4 text-xs text-[#35251F] font-semibold">
-            <div className="flex items-center gap-1.5 bg-[#FAF8F3]/85 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-[#B69556]/30 shadow-xs">
-              <MapPin className="w-4 h-4 text-[#642D3A]" />
-              <span>Thaiyur Market Rd, Kelambakkam</span>
-            </div>
-
-            <a href="tel:+917397221142" className="flex items-center gap-1.5 text-[#642D3A] hover:underline font-bold bg-[#FAF8F3]/85 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-[#B69556]/30 shadow-xs">
-              <Phone className="w-4 h-4" />
-              <span>+91 73972 21142</span>
-            </a>
           </div>
         </div>
       </div>
