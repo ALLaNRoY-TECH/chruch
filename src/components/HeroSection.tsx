@@ -9,7 +9,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreMass, onPlanVisit }) => {
   return (
-    <section id="home" className="relative min-h-[92vh] flex items-center justify-center pt-24 pb-16 px-6 md:px-12 overflow-hidden bg-[#FAF8F3]">
+    <section id="home" className="relative min-h-[92vh] flex items-center justify-center pt-28 md:pt-32 pb-16 px-6 md:px-12 overflow-hidden bg-[#FAF8F3]">
       {/* Background with Real Sanctuary Photograph and Editorial Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <img

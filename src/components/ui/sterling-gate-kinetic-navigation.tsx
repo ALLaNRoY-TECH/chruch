@@ -21,6 +21,35 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
   // We need a ref for the parent container to scope GSAP
   const containerRef = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (isMenuOpen) {
+        setIsHeaderVisible(true);
+        return;
+      }
+
+      // At the top of the page, always show header
+      if (currentScrollY <= 25) {
+        setIsHeaderVisible(true);
+      } else if (currentScrollY > lastScrollY.current && currentScrollY > 40) {
+        // Scrolling DOWN -> it goes away!
+        setIsHeaderVisible(false);
+      } else if (currentScrollY < lastScrollY.current - 5) {
+        // Scrolling UP -> reveal for convenient navigation
+        setIsHeaderVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isMenuOpen]);
 
   // Initial Setup & Hover Effects
   useEffect(() => {
@@ -199,7 +228,7 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
 
   return (
     <div ref={containerRef} className="relative z-50">
-      <div className="site-header-wrapper">
+      <div className={`site-header-wrapper ${!isHeaderVisible ? "is--scrolled-hidden" : ""}`}>
         <header className="header">
           <div className="container is--full">
             <nav className="nav-row">
@@ -209,11 +238,11 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
                 aria-label="Sancta Maria Catholic Church Home" 
                 className="nav-logo-row w-inline-block flex items-center gap-3 sm:gap-4 group text-decoration-none py-1"
               >
-                <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-[72px] md:h-[72px] rounded-full overflow-hidden border-2 border-[#B69556]/60 shadow-md bg-white p-1 transition-transform duration-300 group-hover:scale-105 shrink-0 flex items-center justify-center">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-[72px] md:h-[72px] shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
                   <img
                     src="/images/church/church_emblem.png"
                     alt="Sancta Maria Catholic Church Logo"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain filter drop-shadow-sm"
                   />
                 </div>
                 <div className="flex flex-col text-left">
