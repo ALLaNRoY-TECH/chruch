@@ -105,20 +105,25 @@ h1, h2, h3, h4, .font-serif {
 }
 
 .nav-close-btn {
-  background: transparent;
-  border: 1px solid rgba(182, 149, 86, 0.35);
-  padding: 0.5rem 1rem;
+  background: rgba(250, 248, 243, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(182, 149, 86, 0.5);
+  padding: 0.55rem 1.15rem;
   border-radius: 9999px;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  box-shadow: 0 2px 10px rgba(53, 37, 31, 0.06);
   transition: all 0.25s ease;
 }
 
 .nav-close-btn:hover {
-  background-color: rgba(100, 45, 58, 0.08);
-  border-color: #642D3A;
+  background-color: #FAF8F3;
+  border-color: #B69556;
+  box-shadow: 0 4px 16px rgba(182, 149, 86, 0.25);
+  transform: scale(1.03);
 }
 
 .menu-button-text {

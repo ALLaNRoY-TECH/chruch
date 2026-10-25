@@ -255,16 +255,24 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
               </a>
 
               <div className="nav-row__right flex items-center gap-2.5 sm:gap-3.5">
-                {/* Donate Button Beside Menu Button */}
+                {/* Haute-Couture Ecclesiastical Donate Button */}
                 <a
                   href="#donate"
                   onClick={(e) => handleLinkClick(e, "donate")}
-                  className="inline-flex items-center gap-1.5 px-3.5 sm:px-4 py-2 rounded-full bg-[#642D3A] text-[#FAF8F3] text-xs uppercase tracking-wider font-semibold shadow-md hover:bg-[#263B50] hover:scale-105 active:scale-95 transition-all cursor-pointer select-none"
+                  className="relative overflow-hidden group inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-[#642D3A] via-[#783345] to-[#4F1C28] text-[#FAF8F3] text-xs uppercase tracking-[0.2em] font-semibold border border-[#B69556]/60 shadow-[0_4px_16px_rgba(100,45,58,0.28),inset_0_1px_1px_rgba(255,255,255,0.25)] hover:shadow-[0_6px_24px_rgba(100,45,58,0.45),0_0_15px_rgba(182,149,86,0.35)] hover:border-[#B69556] hover:scale-[1.04] active:scale-[0.98] transition-all duration-300 cursor-pointer select-none"
                   style={{ pointerEvents: 'auto' }}
                   aria-label="Donate to Sancta Maria Catholic Church"
                 >
-                  <span className="w-2 h-2 rounded-full bg-[#B69556] animate-pulse"></span>
-                  <span>Donate</span>
+                  {/* Subtle Light Sheen Highlight */}
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
+
+                  {/* Pulsing Luminous Gold Dot with Halo Ring */}
+                  <span className="relative flex h-2 w-2 items-center justify-center shrink-0">
+                    <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-[#B69556] opacity-60" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#B69556] shadow-[0_0_6px_#B69556]" />
+                  </span>
+
+                  <span className="relative z-10 drop-shadow-xs">Donate</span>
                 </a>
                 
                 {/* Menu Button */}
