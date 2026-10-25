@@ -209,8 +209,12 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
                 aria-label="Sancta Maria Catholic Church Home" 
                 className="nav-logo-row w-inline-block flex items-center gap-3 group text-decoration-none"
               >
-                <div className="w-9 h-9 rounded-full bg-[#642D3A] text-[#FAF8F3] flex items-center justify-center font-serif text-lg font-bold border border-[#B69556]/40 shadow-sm transition-transform duration-300 group-hover:scale-105">
-                  ✟
+                <div className="w-10 h-10 rounded-full overflow-hidden border border-[#B69556]/40 shadow-sm bg-white p-0.5 transition-transform duration-300 group-hover:scale-105 shrink-0 flex items-center justify-center">
+                  <img
+                    src="/images/church/church_logo.png"
+                    alt="Sancta Maria Catholic Church Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div className="flex flex-col text-left">
                   <span className="font-serif text-base tracking-wider font-semibold text-[#35251F] uppercase leading-none group-hover:text-[#642D3A] transition-colors">
@@ -418,8 +422,12 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
                 className="w-full flex items-center justify-between p-4 rounded-2xl bg-gradient-to-r from-[#642D3A] to-[#451B25] text-[#FAF8F3] shadow-md border border-[#B69556]/40 hover:shadow-xl hover:scale-[1.01] transition-all group cursor-pointer"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-[#FAF8F3]/15 flex items-center justify-center font-serif text-base border border-[#B69556]/40 text-[#FAF8F3]">
-                    ✟
+                  <div className="w-10 h-10 rounded-full overflow-hidden bg-white p-0.5 border border-[#B69556]/40 shadow-sm shrink-0 flex items-center justify-center">
+                    <img
+                      src="/images/church/church_logo.png"
+                      alt="Sancta Maria Logo"
+                      className="w-full h-full object-contain"
+                    />
                   </div>
                   <div className="text-left">
                     <p className="text-xs font-bold uppercase tracking-wider text-[#FAF8F3]">Parish Offerings & GPay</p>
@@ -436,7 +444,6 @@ export function Component({ onNavigate, activePage = "home", churchName = "Sanct
             <div className="relative z-10 px-8 py-6 bg-[#E8DDCC]/40 border-t border-[#B69556]/20 text-xs text-[#594438] space-y-2">
               <div className="flex items-center justify-between">
                 <span className="font-semibold text-[#35251F]">Hosur Diocese · Syro Malabar</span>
-                <span className="text-[#642D3A] font-semibold">★ 4.9 Rating</span>
               </div>
               <p>Thaiyur Market Road, Kelambakkam, Thaiyur, Tamil Nadu 603103</p>
               <div className="pt-2 flex gap-4">

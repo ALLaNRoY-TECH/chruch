@@ -82,8 +82,12 @@ export const AboutSection: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             {/* Priest Icon / Placeholder Portrait Area */}
             <div className="md:col-span-4 flex flex-col items-center text-center">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#FAF8F3] border-2 border-[#B69556] flex items-center justify-center text-[#642D3A] shadow-inner relative overflow-hidden">
-                <span className="font-serif text-5xl font-light">✟</span>
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-[#FFFFFF] border-2 border-[#B69556] p-2 flex items-center justify-center shadow-md relative overflow-hidden">
+                <img
+                  src="/images/church/church_logo.png"
+                  alt="Sancta Maria Catholic Church Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="mt-4 text-xs uppercase tracking-widest font-semibold text-[#642D3A]">
                 Parish Priest / Vicar

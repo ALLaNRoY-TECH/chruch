@@ -60,12 +60,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreMass, onPlanV
           {/* Fast-Facts Badge Bar */}
           <div className="pt-6 border-t border-[#B69556]/20 flex flex-wrap items-center gap-6 text-xs text-[#594438] font-medium">
             <div className="flex items-center gap-1.5">
-              <Star className="w-4 h-4 fill-[#B69556] text-[#B69556]" />
-              <span className="font-bold text-[#35251F]">4.9 Rating</span>
-              <span className="text-[#594438]/70">(40+ Parish Reviews)</span>
-            </div>
-
-            <div className="flex items-center gap-1.5">
               <MapPin className="w-4 h-4 text-[#642D3A]" />
               <span>Thaiyur Market Rd, Kelambakkam</span>
             </div>

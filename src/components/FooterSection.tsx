@@ -13,8 +13,12 @@ export const FooterSection: React.FC = () => {
           {/* Brand Col */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-[#642D3A] text-[#FAF8F3] flex items-center justify-center font-serif text-xl border border-[#B69556]">
-                ✟
+              <div className="w-12 h-12 rounded-full overflow-hidden bg-white p-0.5 border border-[#B69556] shadow-sm shrink-0 flex items-center justify-center">
+                <img
+                  src="/images/church/church_logo.png"
+                  alt="Sancta Maria Church Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl font-bold tracking-wider text-[#FAF8F3]">
@@ -71,14 +75,15 @@ export const FooterSection: React.FC = () => {
               <p className="text-[11px] text-[#FAF8F3]/60 pt-1">
                 Diocese: {CHURCH_INFO.diocese}
               </p>
-              <div className="pt-2">
+              <div className="pt-3 w-full">
                 <a
                   href="https://maps.app.goo.gl/Ja3jjRSjApNCqVgt8"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-[#B69556]/60 text-xs text-[#FAF8F3] hover:bg-[#642D3A] transition-colors"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#642D3A] border border-[#B69556]/60 text-xs font-semibold text-[#FAF8F3] hover:bg-[#263B50] shadow-md transition-all text-center"
                 >
-                  📍 Open in Google Maps
+                  <MapPin className="w-3.5 h-3.5 text-[#B69556]" />
+                  <span>Open in Google Maps</span>
                 </a>
               </div>
             </div>

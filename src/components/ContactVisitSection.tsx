@@ -145,7 +145,7 @@ export const ContactVisitSection: React.FC = () => {
 
             <div className="p-6 bg-[#FAF8F3] border-t border-[#B69556]/20 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#594438]">
               <span>Accessible location near Kelambakkam Bus Station and OMR junction.</span>
-              <span className="text-[#642D3A] font-semibold">★ 4.9 on Google Maps</span>
+              <span className="text-[#642D3A] font-semibold">Official Parish Sanctuary · Hosur Diocese</span>
             </div>
           </div>
         </div>

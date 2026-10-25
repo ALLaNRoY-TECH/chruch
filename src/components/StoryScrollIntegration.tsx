@@ -155,11 +155,6 @@ export const ChurchStoryScroll: React.FC = () => {
             <p className="max-w-[50ch] text-[clamp(1rem,1.8vw,1.4rem)] font-light leading-relaxed text-[#FAF8F3]/90">
               Welcoming IT professionals, families, students, and seniors. From the youth of SMYM to our children&apos;s catechism, you belong here.
             </p>
-            <div className="flex gap-4">
-              <span className="px-4 py-2 rounded-full border border-[#B69556]/40 text-xs font-semibold text-[#B69556] uppercase tracking-wider">
-                ★ 4.9 Parish Rating
-              </span>
-            </div>
           </div>
         </FlowSection>
 
