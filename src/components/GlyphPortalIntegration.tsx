@@ -6,7 +6,7 @@ export const ChurchGlyphPortal: React.FC = () => {
   return (
     <div id="portal-experience" className="relative w-full bg-[#FAF8F3]">
       <GlyphPortal
-        word="SANCTA"
+        word="SANCTA MARIA"
         fontFamily='"Plus Jakarta Sans", "Arial Black", sans-serif'
         fontWeight={900}
         scrollLength={2.0}
@@ -23,7 +23,24 @@ export const ChurchGlyphPortal: React.FC = () => {
           </div>
         }
         front={
-          <div className="absolute inset-0 pointer-events-none flex flex-col justify-end p-6 sm:p-8 md:p-12">
+          <div className="absolute inset-0 pointer-events-none p-6 sm:p-8 md:p-12 flex flex-col justify-between">
+            {/* Top spacer */}
+            <div />
+
+            {/* Aesthetic "Church" sub-label placed directly beneath SANCTA MARIA */}
+            <div className="w-full flex flex-col items-center justify-center text-center mt-14 sm:mt-18 md:mt-24 pointer-events-none">
+              <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-[#FAF8F3]/90 backdrop-blur-sm border border-[#B69556]/50 shadow-xs">
+                <span className="w-6 sm:w-10 h-[1px] bg-[#B69556]"></span>
+                <span className="font-serif text-xs sm:text-sm md:text-base uppercase tracking-[0.35em] text-[#642D3A] font-bold">
+                  Church
+                </span>
+                <span className="w-6 sm:w-10 h-[1px] bg-[#B69556]"></span>
+              </div>
+              <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#594438]/85 font-medium mt-1.5">
+                Syro Malabar Catholic Parish · Kelambakkam
+              </p>
+            </div>
+
             {/* Bottom: Caption placed clearly BELOW the SANCTA word */}
             <div className="w-full max-w-3xl mx-auto flex flex-col items-center text-center space-y-3 pb-2 sm:pb-4">
               <div className="px-6 py-3.5 rounded-2xl bg-[#FAF8F3]/95 backdrop-blur-md border border-[#B69556]/50 shadow-xl max-w-xl mx-auto pointer-events-auto">
